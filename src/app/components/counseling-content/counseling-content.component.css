@@ -1,3 +1,54 @@
-.text-color{
+.text-color {
     color: #2F3645;
+}
+
+/* Basic styling for underline effect */
+.underline-effect {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Space for underline */
+}
+
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor; /* Matches text color */
+    transition: width 0.3s ease;
+}
+
+.underline-effect:hover::after {
+    width: 100%;
+}
+
+.jumbotron-custom {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-custom{
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.btn-custom:hover {
+    transform: scale(1.1); /* Slightly enlarges the button */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a shadow effect */
+    background-color: #0056b3; /* Darkens the background color */
+    color: #ffffff; /* Changes text color */
+}
+
+.btn-custom{
+    background-color:rgb(154, 99, 168);
 }

@@ -13,6 +13,10 @@ import { TestComponent } from './components/test/test.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PlansDropdownComponent } from './components/plans-dropdown/plans-dropdown.component';
+import { ResoursesDropdownComponent } from './components/resourses-dropdown/resourses-dropdown.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CounselingComponent } from './components/counseling/counseling.component';
+import { CounselingContentComponent } from './components/counseling-content/counseling-content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { PlansDropdownComponent } from './components/plans-dropdown/plans-dropdo
     TestComponent,
     FooterComponent,
     AboutUsComponent,
-    PlansDropdownComponent
+    PlansDropdownComponent,
+    ResoursesDropdownComponent,
+    CarouselComponent,
+    CounselingComponent,
+    CounselingContentComponent
   ],
   imports: [
     BrowserModule,

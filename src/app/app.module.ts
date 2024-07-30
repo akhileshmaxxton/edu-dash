@@ -17,6 +17,8 @@ import { ResoursesDropdownComponent } from './components/resourses-dropdown/reso
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CounselingComponent } from './components/counseling/counseling.component';
 import { CounselingContentComponent } from './components/counseling-content/counseling-content.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeCardSectionComponent } from './components/home-card-section/home-card-section.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CounselingContentComponent } from './components/counseling-content/coun
     ResoursesDropdownComponent,
     CarouselComponent,
     CounselingComponent,
-    CounselingContentComponent
+    CounselingContentComponent,
+    HeaderComponent,
+    HomeCardSectionComponent
   ],
   imports: [
     BrowserModule,

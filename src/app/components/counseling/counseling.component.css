@@ -1,0 +1,9 @@
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bg{
+    background-color: #E5E1DA;
+}

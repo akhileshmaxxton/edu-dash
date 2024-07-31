@@ -19,6 +19,16 @@ import { CounselingComponent } from './components/counseling/counseling.componen
 import { CounselingContentComponent } from './components/counseling-content/counseling-content.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeCardSectionComponent } from './components/home-card-section/home-card-section.component';
+import { FormForContactUsComponent } from './components/form-for-contact-us/form-for-contact-us.component';
+import { HeroSectionForContactUsComponent } from './components/hero-section-for-contact-us/hero-section-for-contact-us.component';
+import { UniversitiesComponent } from './components/universities/universities.component';
+import { UniversityPageComponent } from './pages/university-page/university-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UniServiceService } from './service/uni-service.service';
+import { CarousalContactUsComponent } from './components/carousal-contact-us/carousal-contact-us.component';
+import { ContactUsDetailsComponent } from './components/contact-us-details/contact-us-details.component';
+import { MapComponent } from './components/map/map.component';
+import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +47,23 @@ import { HomeCardSectionComponent } from './components/home-card-section/home-ca
     CounselingComponent,
     CounselingContentComponent,
     HeaderComponent,
-    HomeCardSectionComponent
+    HomeCardSectionComponent,
+    FormForContactUsComponent,
+    HeroSectionForContactUsComponent,
+    UniversitiesComponent,
+    UniversityPageComponent,
+    CarousalContactUsComponent,
+    ContactUsDetailsComponent,
+    MapComponent,
+    ContactUsFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     routes,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UniServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

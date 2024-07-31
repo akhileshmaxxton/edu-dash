@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col py-2 d-flex justify-content-center">
+        <div class="card h-100 d-flex justify-content-center" style="width: 18rem" *ngFor = 'let uniDetails of uniList$'>
+          <img
+            decoding="async"
+            width="150"
+            height="150"
+            [src]="uniDetails.Logo"
+            class="d-flex img-center"
+            alt=""
+            title="Efficient-Work-Proces-150x150"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center p-2">{{uniDetails.Name}}</h5>
+            <h5 class="card-title text-center p-2">{{uniDetails.Location.City}},{{uniDetails.Location.State}},{{uniDetails.Location.Country}}</h5>
+            <h5 class="card-title text-center p-2">{{uniDetails.Established}}</h5>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,3 +1,8 @@
 .img-center{
     margin:auto;
 }
+
+.card-effect:has(img:hover) img:not(:hover){
+    scale: .8;
+    opacity: .7;
+}

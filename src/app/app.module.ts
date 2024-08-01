@@ -29,6 +29,9 @@ import { CarousalContactUsComponent } from './components/carousal-contact-us/car
 import { ContactUsDetailsComponent } from './components/contact-us-details/contact-us-details.component';
 import { MapComponent } from './components/map/map.component';
 import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
+import { HeroSectionofFormContactUsComponent } from './components/hero-sectionof-form-contact-us/hero-sectionof-form-contact-us.component';
+import { FormSectionofFormContactUsComponent } from './components/form-sectionof-form-contact-us/form-sectionof-form-contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,13 +58,17 @@ import { ContactUsFormComponent } from './components/contact-us-form/contact-us-
     CarousalContactUsComponent,
     ContactUsDetailsComponent,
     MapComponent,
-    ContactUsFormComponent
+    ContactUsFormComponent,
+    HeroSectionofFormContactUsComponent,
+    FormSectionofFormContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     routes,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [UniServiceService],
   bootstrap: [AppComponent]

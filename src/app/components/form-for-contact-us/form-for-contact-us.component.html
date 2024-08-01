@@ -1,1 +1,114 @@
-<p>form-for-contact-us works!</p>
+<form class="row g-3" [formGroup]="angForm" (ngSubmit)="onSubmit()" novalidate>
+
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input
+      type="email"
+      formControlName="email"
+      class="form-control"
+      id="inputEmail4"
+    />
+    <div
+      *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['email'].errors">Email is required.</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Name</label>
+    <input type="text" class="form-control" id="inputPassword4" formControlName="name"  />
+    <div
+      *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['name'].errors">Name is required.</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label"> Phone number</label>
+    <input type="number" class="form-control" id="inputCity" formControlName="phone"/>
+    <div
+      *ngIf="angForm.controls['phone'].invalid && (angForm.controls['phone'].dirty || angForm.controls['phone'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['phone'].errors">Phone no is required.</div>
+    </div>
+  </div>
+
+
+
+  <div class="col-md-6">
+    <label for="inputZip" class="form-label">State</label>
+    <input type="text" class="form-control" id="inputZip" formControlName="state"/>
+    <div
+      *ngIf="angForm.controls['state'].invalid && (angForm.controls['state'].dirty || angForm.controls['state'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['state'].errors">Name is required.</div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Country</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputAddress"
+      placeholder="India"
+      formControlName="country"
+    />
+    <div
+      *ngIf="angForm.controls['country'].invalid && (angForm.controls['country'].dirty || angForm.controls['country'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['country'].errors">Name is required.</div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Message</label>
+    <textarea
+      type="text"
+      class="form-control"
+      id="inputAddress2"
+      formControlName="message"
+    ></textarea>
+    <div
+      *ngIf="angForm.controls['message'].invalid && (angForm.controls['message'].dirty || angForm.controls['message'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['message'].errors">Message is required.</div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="check"/>
+      <label class="form-check-label" for="gridCheck">
+        Terms & Conditions
+      </label>
+      <div
+      *ngIf="angForm.controls['check'].invalid && (angForm.controls['check'].dirty || angForm.controls['check'].touched)"
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['check'].errors">Please check the box</div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+
+</form>

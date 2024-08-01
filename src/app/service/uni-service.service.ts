@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import axios from 'axios';
 import { map, Observable } from 'rxjs';
 
 @Injectable({
@@ -21,5 +22,10 @@ export class UniServiceService {
   getUniDetails(): Observable<any> {
     return this.http.get(this.url, { headers: this.headers })
       .pipe(map((res) => res));
+  }
+
+
+  contactApi(contactDetails : any) {
+    return axios.post("http://localhost:7001/api/contact", contactDetails);
   }
 }

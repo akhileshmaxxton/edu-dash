@@ -37,21 +37,26 @@
         </ul>
   
         <ul class="navbar-nav flex-row">
-          <li class="nav-item">
-            <a class="nav-link px-2" href="#!">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2" href="#!">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ps-2" href="#!">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
+         
+          
+        </ul>
+        <ul class="navbar-nav flex-row">
+          <div class="dropdown">
+            <button data-mdb-button-init
+              data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Login
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" routerLink="register">Sign Up</a></li>
+            </ul>
+          </div>
+          
         </ul>
       </div>
     </div>

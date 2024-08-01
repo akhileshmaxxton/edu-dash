@@ -32,6 +32,8 @@ import { ContactUsFormComponent } from './components/contact-us-form/contact-us-
 import { HeroSectionofFormContactUsComponent } from './components/hero-sectionof-form-contact-us/hero-sectionof-form-contact-us.component';
 import { FormSectionofFormContactUsComponent } from './components/form-sectionof-form-contact-us/form-sectionof-form-contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MapComponent,
     ContactUsFormComponent,
     HeroSectionofFormContactUsComponent,
-    FormSectionofFormContactUsComponent
+    FormSectionofFormContactUsComponent,
+    RegisterComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,

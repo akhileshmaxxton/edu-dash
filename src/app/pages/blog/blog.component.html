@@ -1,0 +1,24 @@
+<div class="blog-container">
+    <div class="blog-header">
+      <h1>Blog</h1>
+      <p>Here are the latest blog posts:</p>
+    </div>
+  
+    <div class="blog-cards">
+      <div *ngFor="let blog of blogs" class="blog-card">
+        <img [src]="blog.image" alt="Blog image" class="blog-image" />
+        <div class="blog-content">
+          <div>
+            <h2>{{ blog.headline }}</h2>
+          </div>
+          
+          <div>
+            <p >{{ blog.description }}</p>
+          </div>
+          <div class="blog-footer">
+            <i class="bi bi-clock"></i> {{ blog.readTime }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

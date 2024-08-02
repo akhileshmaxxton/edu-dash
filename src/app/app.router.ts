@@ -6,6 +6,11 @@ import { GallaryComponent } from "./pages/gallary/gallary.component";
 import { AboutUsComponent } from "./pages/about-us/about-us.component";
 import { UniversityPageComponent } from "./pages/university-page/university-page.component";
 import { RegisterPageComponent } from "./pages/register-page/register-page.component";
+import { LoginPageComponent } from "./pages/login-page/login-page.component";
+import { ErrorPageComponent } from "./pages/error-page/error-page.component";
+import { PlansComponent } from "./pages/plans/plans.component";
+import { K12Component } from "./pages/k12/k12.component";
+import { BlogComponent } from "./pages/blog/blog.component";
 
 export const router: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' }, //default page
@@ -15,8 +20,13 @@ export const router: Routes = [
     { path: 'gallary', component: GallaryComponent },
     { path: 'about-us', component: AboutUsComponent },
     { path: 'universities', component: UniversityPageComponent },
+    { path: 'login/register', component: RegisterPageComponent },
     { path: 'register', component: RegisterPageComponent },
-    { path: '**', redirectTo: 'home' }
+    { path: 'login', component: LoginPageComponent },
+    { path: 'higher', component: PlansComponent },
+    { path: 'k12', component: K12Component },
+    { path: 'blog', component: BlogComponent },
+    { path: '**', component: ErrorPageComponent }
     
 ];
 

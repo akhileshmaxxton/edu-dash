@@ -133,3 +133,63 @@ p {
         padding: 25px;
     }
 }
+
+
+
+
+
+/* Container for accordion with padding */
+.accordion-container {
+    padding-left: 4rem; 
+    padding-right: 4rem; 
+    margin-bottom: 2rem; 
+}
+
+/* / Accordion items with space in between / */
+.accordion-item {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem; 
+}
+
+/* / Accordion button styles / */
+.accordion-button {
+    border-radius: 0.5rem; 
+    padding: 1rem;
+    font-family: 'Arial', sans-serif; 
+    font-weight: 300;
+    color: #333;
+    font-size: 1rem;
+    background-color:rgb(118, 164, 189); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+/* / Accordion button hover effect / */
+.accordion-button:hover {
+    background-color: #e9ecef; 
+}
+
+/* / Accordion button when expanded / */
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef; 
+}
+
+/* / Accordion collapse styling / */
+.accordion-collapse {
+    border-top: 1px solid #ddd;
+}
+
+/* / Accordion body styling / */
+.accordion-body {
+    font-family: 'Arial', sans-serif; 
+    font-weight: 300; 
+    color: #555;
+    font-size: 0.875rem; 
+    padding: 1rem; 
+}
+
+/* / Prevent default focus outline effect / */
+.accordion-button:focus {
+    box-shadow: none; 
+    outline: none; 
+}

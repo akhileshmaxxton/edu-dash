@@ -21,7 +21,6 @@ export class LoginPageComponent {
 
   async onSubmit(form: NgForm) {
     if (form.valid && this.user.terms) {
-      // Handle form submission
       const formData: IUserLogin = this.user;
       console.log("dormData",formData);
       try{

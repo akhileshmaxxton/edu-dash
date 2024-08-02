@@ -8,8 +8,8 @@ import { map, Observable } from 'rxjs';
 })
 export class UniServiceService {
 
-  private url: string = '';
- // private url: string = 'https://university-data.p.rapidapi.com/api/v2/rank/10';
+  //private url: string = '';
+  private url: string = 'https://university-data.p.rapidapi.com/api/v2/rank/10';
 
   // Define headers separately
   private headers = new HttpHeaders({

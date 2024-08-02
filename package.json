@@ -23,6 +23,9 @@
     "bootstrap": "^5.3.3",
     "fontawesome": "^5.6.3",
     "jquery": "^3.7.1",
+    "lightbox": "^0.5.0",
+    "lightbox2": "^2.11.4",
+    "ngx-lightbox": "^3.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

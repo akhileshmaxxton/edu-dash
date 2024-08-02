@@ -34,6 +34,12 @@ import { FormSectionofFormContactUsComponent } from './components/form-sectionof
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { LightboxModule } from 'ngx-lightbox';
+import { PlansComponent } from './pages/plans/plans.component';
+import { K12Component } from './pages/k12/k12.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +70,12 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
     HeroSectionofFormContactUsComponent,
     FormSectionofFormContactUsComponent,
     RegisterComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    LoginPageComponent,
+    ErrorPageComponent,
+    PlansComponent,
+    K12Component,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +84,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    LightboxModule
   ],
   providers: [UniServiceService],
   bootstrap: [AppComponent]

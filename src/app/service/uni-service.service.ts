@@ -28,4 +28,12 @@ export class UniServiceService {
   contactApi(contactDetails : any) {
     return axios.post("http://localhost:7001/api/contact", contactDetails);
   }
+
+  registerApi(registerDetails : any) {
+    return axios.post("http://localhost:7001/api/register", registerDetails);
+  }
+
+  loginApi(loginDetails : any) {
+    return axios.get("http://localhost:7001/api/login", loginDetails);
+  }
 }

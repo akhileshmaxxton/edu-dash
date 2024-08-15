@@ -13,8 +13,6 @@ export class UniServiceService {
 
   // Define headers separately
   private headers = new HttpHeaders({
-    'x-rapidapi-key': '1c7a0f4332mshd7add8f4edc801ap113e8bjsn1082504ee8e3',  // Replace with your actual API key
-    'x-rapidapi-host': 'university-data.p.rapidapi.com'
   });
 
   constructor(private http: HttpClient) { }
